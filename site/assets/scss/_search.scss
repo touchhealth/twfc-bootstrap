@@ -1,6 +1,6 @@
 // stylelint-disable selector-class-pattern
 
-:root {
+@at-root :root {
   --docsearch-primary-color: var(--bd-violet);
   --docsearch-logo-color: var(--bd-violet);
 }
