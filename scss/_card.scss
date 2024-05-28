@@ -23,6 +23,8 @@
   --#{$prefix}card-bg: #{$card-bg};
   --#{$prefix}card-img-overlay-padding: #{$card-img-overlay-padding};
   --#{$prefix}card-group-margin: #{$card-group-margin};
+  --#{$prefix}card-header-primary-color: #{color-contrast($primary)};
+  --#{$prefix}card-header-primary-bg: #{$primary};
   // scss-docs-end card-css-vars
 
   position: relative;
@@ -112,6 +114,12 @@
 
   &:first-child {
     @include border-radius(var(--#{$prefix}card-inner-border-radius) var(--#{$prefix}card-inner-border-radius) 0 0);
+  }
+
+  &.card-header-primary {
+    color: var(--#{$prefix}card-header-primary-color);
+    background-color: var(--#{$prefix}card-header-primary-bg);
+    border-color: var(--#{$prefix}card-header-primary-bg);
   }
 }
 

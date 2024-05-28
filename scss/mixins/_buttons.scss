@@ -61,7 +61,8 @@
 // scss-docs-end btn-outline-variant-mixin
 
 // scss-docs-start btn-size-mixin
-@mixin button-size($padding-y, $padding-x, $font-size, $border-radius) {
+@mixin button-size($padding-y, $padding-x, $font-size, $border-radius, $height) {
+  --#{$prefix}btn-height: #{$height};
   --#{$prefix}btn-padding-y: #{$padding-y};
   --#{$prefix}btn-padding-x: #{$padding-x};
   @include rfs($font-size, --#{$prefix}btn-font-size);
