@@ -126,6 +126,15 @@
   --bs-form-valid-border-color: #198754;
   --bs-form-invalid-color: #dc3545;
   --bs-form-invalid-border-color: #dc3545;
+  --bs-form-height-1: 1.5rem;
+  --bs-form-height-2: 3rem;
+  --bs-form-height-3: 4.5rem;
+  --bs-form-height-4: 6rem;
+  --bs-form-height-5: 7.5rem;
+  --bs-form-height-6: 9rem;
+  --bs-form-height-7: 10.5rem;
+  --bs-form-height-8: 12rem;
+  --bs-form-height-9: 13.5rem;
 }
 
 [data-bs-theme=dark] {

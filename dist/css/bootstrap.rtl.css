@@ -127,6 +127,15 @@
   --bs-form-valid-border-color: #198754;
   --bs-form-invalid-color: #dc3545;
   --bs-form-invalid-border-color: #dc3545;
+  --bs-form-height-1: 1.5rem;
+  --bs-form-height-2: 3rem;
+  --bs-form-height-3: 4.5rem;
+  --bs-form-height-4: 6rem;
+  --bs-form-height-5: 7.5rem;
+  --bs-form-height-6: 9rem;
+  --bs-form-height-7: 10.5rem;
+  --bs-form-height-8: 12rem;
+  --bs-form-height-9: 13.5rem;
 }
 
 [data-bs-theme=dark] {
@@ -2085,7 +2094,8 @@ progress {
   }
 }
 .form-label {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0;
+  line-height: 1;
 }
 
 .col-form-label {
@@ -2128,7 +2138,7 @@ progress {
   background-color: var(--bs-body-bg);
   background-clip: padding-box;
   border: var(--bs-border-width) solid var(--bs-border-color);
-  border-radius: var(--bs-border-radius);
+  border-radius: 0;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -2240,7 +2250,7 @@ progress {
   min-height: calc(1.5em + 0 + calc(var(--bs-border-width) * 2));
   padding: 0 0.5rem;
   font-size: 0.75rem;
-  border-radius: var(--bs-border-radius-sm);
+  border-radius: 0;
 }
 .form-control-sm::-webkit-file-upload-button {
   padding: 0 0.5rem;
@@ -2259,7 +2269,7 @@ progress {
   min-height: calc(1.5em + 0.5rem + calc(var(--bs-border-width) * 2));
   padding: 0.25rem 1rem;
   font-size: 0.75rem;
-  border-radius: var(--bs-border-radius-lg);
+  border-radius: 0;
 }
 .form-control-lg::-webkit-file-upload-button {
   padding: 0.25rem 1rem;
@@ -2294,11 +2304,11 @@ textarea.form-control-lg {
 }
 .form-control-color::-moz-color-swatch {
   border: 0 !important;
-  border-radius: var(--bs-border-radius);
+  border-radius: 0;
 }
 .form-control-color::-webkit-color-swatch {
   border: 0 !important;
-  border-radius: var(--bs-border-radius);
+  border-radius: 0;
 }
 .form-control-color.form-control-sm {
   height: calc(1.5em + 0 + calc(var(--bs-border-width) * 2));
@@ -2325,7 +2335,7 @@ textarea.form-control-lg {
   background-position: left 0.5rem center;
   background-size: 16px 12px;
   border: var(--bs-border-width) solid var(--bs-border-color);
-  border-radius: var(--bs-border-radius);
+  border-radius: 0;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -2355,7 +2365,7 @@ textarea.form-control-lg {
   padding-bottom: 0;
   padding-right: 0.5rem;
   font-size: 0.75rem;
-  border-radius: var(--bs-border-radius-sm);
+  border-radius: 0;
 }
 
 .form-select-lg {
@@ -2363,7 +2373,7 @@ textarea.form-control-lg {
   padding-bottom: 0.25rem;
   padding-right: 1rem;
   font-size: 0.75rem;
-  border-radius: var(--bs-border-radius-lg);
+  border-radius: 0;
 }
 
 [data-bs-theme=dark] .form-select {
@@ -2672,7 +2682,7 @@ textarea.form-control-lg {
   height: 1.5em;
   content: "";
   background-color: var(--bs-body-bg);
-  border-radius: var(--bs-border-radius);
+  border-radius: 0;
 }
 .form-floating > .form-control:focus ~ label::after,
 .form-floating > .form-control:not(:placeholder-shown) ~ label::after,
@@ -2684,7 +2694,7 @@ textarea.form-control-lg {
   height: 1.5em;
   content: "";
   background-color: var(--bs-body-bg);
-  border-radius: var(--bs-border-radius);
+  border-radius: 0;
 }
 .form-floating > .form-control:-webkit-autofill ~ label {
   transform: scale(0.85) translateY(-0.5rem) translateX(-0.15rem);
@@ -2741,7 +2751,7 @@ textarea.form-control-lg {
   white-space: nowrap;
   background-color: var(--bs-tertiary-bg);
   border: var(--bs-border-width) solid var(--bs-border-color);
-  border-radius: var(--bs-border-radius);
+  border-radius: 0;
 }
 
 .input-group-lg > .form-control,
@@ -2750,7 +2760,7 @@ textarea.form-control-lg {
 .input-group-lg > .btn {
   padding: 0.25rem 1rem;
   font-size: 0.75rem;
-  border-radius: var(--bs-border-radius-lg);
+  border-radius: 0;
 }
 
 .input-group-sm > .form-control,
@@ -2759,7 +2769,7 @@ textarea.form-control-lg {
 .input-group-sm > .btn {
   padding: 0 0.5rem;
   font-size: 0.75rem;
-  border-radius: var(--bs-border-radius-sm);
+  border-radius: 0;
 }
 
 .input-group-lg > .form-select,
@@ -7713,6 +7723,42 @@ textarea.form-control-lg {
 
 .h-auto {
   height: auto !important;
+}
+
+.fh-1 {
+  height: var(--bs-form-height-1) !important;
+}
+
+.fh-2 {
+  height: var(--bs-form-height-2) !important;
+}
+
+.fh-3 {
+  height: var(--bs-form-height-3) !important;
+}
+
+.fh-4 {
+  height: var(--bs-form-height-4) !important;
+}
+
+.fh-5 {
+  height: var(--bs-form-height-5) !important;
+}
+
+.fh-6 {
+  height: var(--bs-form-height-6) !important;
+}
+
+.fh-7 {
+  height: var(--bs-form-height-7) !important;
+}
+
+.fh-8 {
+  height: var(--bs-form-height-8) !important;
+}
+
+.fh-9 {
+  height: var(--bs-form-height-9) !important;
 }
 
 .mh-100 {

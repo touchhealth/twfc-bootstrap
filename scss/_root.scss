@@ -133,6 +133,10 @@
   --#{$prefix}form-invalid-color: #{$form-invalid-color};
   --#{$prefix}form-invalid-border-color: #{$form-invalid-border-color};
   // scss-docs-end root-form-validation-variables
+
+  @each $form-height, $value in $form-heights {
+    --#{$prefix}form-height-#{$form-height}: #{$value};
+  }
 }
 
 @if $enable-dark-mode {

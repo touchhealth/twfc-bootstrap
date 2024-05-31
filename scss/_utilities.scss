@@ -232,6 +232,21 @@ $utilities: map-merge(
         auto: auto
       )
     ),
+    "form-height": (
+      property: height,
+      class: fh,
+      values: (
+        1: var(--#{$prefix}form-height-1),
+        2: var(--#{$prefix}form-height-2),
+        3: var(--#{$prefix}form-height-3),
+        4: var(--#{$prefix}form-height-4),
+        5: var(--#{$prefix}form-height-5),
+        6: var(--#{$prefix}form-height-6),
+        7: var(--#{$prefix}form-height-7),
+        8: var(--#{$prefix}form-height-8),
+        9: var(--#{$prefix}form-height-9),
+      )
+    ),
     "max-height": (
       property: max-height,
       class: mh,
