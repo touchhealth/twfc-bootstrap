@@ -1246,7 +1246,8 @@ $dropdown-min-width:                10rem !default;
 $dropdown-padding-x:                0 !default;
 $dropdown-padding-y:                .5rem !default;
 $dropdown-spacer:                   .125rem !default;
-$dropdown-font-size:                $font-size-base !default;
+$dropdown-font-size:                $font-size-xs !default;
+$dropdown-line-height:              $line-height-base !default;
 $dropdown-color:                    var(--#{$prefix}body-color) !default;
 $dropdown-bg:                       var(--#{$prefix}body-bg) !default;
 $dropdown-border-color:             var(--#{$prefix}border-color-translucent) !default;
@@ -1370,8 +1371,8 @@ $card-group-margin:                 $grid-gutter-width * .5 !default;
 // Accordion
 
 // scss-docs-start accordion-variables
-$accordion-padding-y:                     1rem !default;
-$accordion-padding-x:                     1.25rem !default;
+$accordion-padding-y:                     .5rem !default;
+$accordion-padding-x:                     .5rem !default;
 $accordion-color:                         var(--#{$prefix}body-color) !default;
 $accordion-bg:                            var(--#{$prefix}body-bg) !default;
 $accordion-border-width:                  var(--#{$prefix}border-width) !default;
@@ -1382,7 +1383,7 @@ $accordion-inner-border-radius:           subtract($accordion-border-radius, $ac
 $accordion-body-padding-y:                $accordion-padding-y !default;
 $accordion-body-padding-x:                $accordion-padding-x !default;
 
-$accordion-button-padding-y:              $accordion-padding-y !default;
+$accordion-button-padding-y:              .125rem !default;
 $accordion-button-padding-x:              $accordion-padding-x !default;
 $accordion-button-color:                  var(--#{$prefix}body-color) !default;
 $accordion-button-bg:                     var(--#{$prefix}accordion-bg) !default;
@@ -1395,7 +1396,7 @@ $accordion-button-focus-border-color:     $input-focus-border-color !default; //
 // fusv-enable
 $accordion-button-focus-box-shadow:       $btn-focus-box-shadow !default;
 
-$accordion-icon-width:                    1.25rem !default;
+$accordion-icon-width:                    .875rem !default;
 $accordion-icon-color:                    $body-color !default;
 $accordion-icon-active-color:             $primary-text-emphasis !default;
 $accordion-icon-transition:               transform .2s ease-in-out !default;
