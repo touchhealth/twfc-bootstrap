@@ -164,5 +164,8 @@
     "peerDependencies": {
       "@popperjs/core": "^2.11.8"
     }
+  },
+  "publishConfig": {
+    "registry": "https://nexus3.touchtec.com.br/repository/npm-hosted/"
   }
 }
